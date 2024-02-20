@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "silverstripe/framework": "~4.1"
+        "silverstripe/framework": "^4 || ^5"
     },
     "replace": {
         "silverstripe-australia/pdfrendition":"1.*"
@@ -30,6 +30,12 @@
     "autoload": {
         "psr-4": {
             "Symbiote\\PdfRendition\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "silverstripe/vendor-plugin": true
         }
     }
 }
